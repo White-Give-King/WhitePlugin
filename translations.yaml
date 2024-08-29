@@ -1,0 +1,9 @@
+# See https://openmod.github.io/openmod-docs/devdoc/concepts/localization.html
+# You can delete this file if you do not need translations
+commands: 
+  TPA:
+    not_enabled: "TPA功能未启用"
+    success: "发送成功"
+    cant_find: "未能找到玩家"
+    pending: "你已发送过请求"
+    error: "发送失败"
