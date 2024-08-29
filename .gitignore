@@ -1,1 +1,4 @@
 *.bat
+/obj/
+/.vscode/
+/bin/
