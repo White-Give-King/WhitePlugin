@@ -14,14 +14,14 @@ namespace WhitePlugin.Commands;
 [CommandAlias("tpac")]
 [CommandDescription("Accept teleport request.")] // Description. Try to keep it short and simple.
 [CommandActor(typeof(UnturnedUser))]
-public class TPAcceptCommand : Command
+public class TPAccept : Command
 {
     private readonly IStringLocalizer _StringLocalizer;
     private readonly IUserManager _UserManager;
     private readonly WhitePlugin _WhitePlugin;
     private readonly IConfiguration _configuration;
 
-    public TPAcceptCommand(
+    public TPAccept(
         IConfiguration configuration,
         IStringLocalizer stringLocalizer,
         IServiceProvider serviceProvider,

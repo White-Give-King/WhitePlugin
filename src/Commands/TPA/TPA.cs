@@ -15,7 +15,7 @@ namespace WhitePlugin.Commands;
 [CommandSyntax("<player>")] // Describe the syntax/usage. Use <> for required arguments and [] for optional arguments.
 [CommandDescription("Send teleport request.")] // Description. Try to keep it short and simple.
 [CommandActor(typeof(UnturnedUser))]
-public class TPACommand : Command
+public class TPA : Command
 {
     private readonly IStringLocalizer _StringLocalizer;
     private readonly IUserManager _UserManager;
@@ -23,7 +23,7 @@ public class TPACommand : Command
     private readonly IConfiguration _configuration;
     private readonly ILogger<WhitePlugin> _Logger;
 
-    public TPACommand(
+    public TPA(
         IConfiguration configuration,
         IStringLocalizer stringLocalizer,
         IServiceProvider serviceProvider,
